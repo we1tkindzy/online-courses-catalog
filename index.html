@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Online Courses</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="catalog">
+
+    <img class="catalog__decor catalog__decor--dots" src="assets/decor/dots.png" alt="" aria-hidden="true">
+    <img class="catalog__decor catalog__decor--circles" src="assets/decor/circles.png" alt="" aria-hidden="true">
+    <img class="catalog__decor catalog__decor--arrows" src="assets/decor/arrows.png" alt="" aria-hidden="true">
+
+    <div class="catalog__container">
+
+      <header class="catalog__header">
+        <p class="catalog__subtitle">Enjoy your studying!</p>
+        <h1 class="catalog__title">Our online courses</h1>
+      </header>
+
+      <div class="catalog__controls">
+        <nav class="filter" aria-label="Course categories">
+          <ul class="filter__list" id="filter-list"></ul>
+        </nav>
+
+        <div class="search">
+          <input
+            class="search__input"
+            type="search"
+            id="search-input"
+            placeholder="Search course..."
+            aria-label="Search courses"
+            autocomplete="off"
+          >
+          <span class="search__icon" aria-hidden="true">
+            <img src="assets/icons/search.png" alt="">
+          </span>
+        </div>
+      </div>
+
+      <div class="catalog__grid" id="courses-grid"></div>
+
+      <div class="catalog__footer" id="load-more-wrapper">
+        <button class="load-more" id="load-more-btn" type="button">
+          <span class="load-more__icon" aria-hidden="true">
+            <img src="assets/icons/refresh.png" alt="">
+          </span>
+          Load more
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

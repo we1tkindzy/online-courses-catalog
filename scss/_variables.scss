@@ -1,0 +1,40 @@
+// ─── Colors  ──────────────────────────────────────────────────────────────────
+$color-primary: #ff3f3a; // primary
+$color-price: #ff4141; // danger
+$color-yellow: #ffcf2d; // secondary
+$color-white: #ffffff; // white
+$color-text: #1e212c; // gray/900
+$color-subtitle: #b3b6bc; // gray/500
+$color-text-muted: #999ca4; // gray/600  — filters, search placeholder
+$color-author: #787a80; // gray/700
+$color-load-more: #414450; // gray/800
+$color-border: #e5e8ed; // gray/300
+$color-bg-page: #ffffff;
+
+// Category badge colors
+$cat-marketing: #03cea4; // success
+$cat-management: #5a87fb; // info
+$cat-hr: #f89828; // warning
+$cat-design: #f52f6e;
+$cat-development: #7772f1;
+
+// ─── Shadows  ─────────────────────────────────────────────────────────────────
+$shadow-card: 0 4px 4px -4px rgba(30, 33, 44, 0.03),
+  0 12px 10px -6px rgba(154, 156, 165, 0.04),
+  0 30px 24px -10px rgba(154, 156, 165, 0.05),
+  0 80px 80px -20px rgba(154, 156, 165, 0.08);
+
+$shadow-card-hover: 0 4px 4px -4px rgba(30, 33, 44, 0.05),
+  0 12px 10px -6px rgba(154, 156, 165, 0.08),
+  0 30px 24px -10px rgba(154, 156, 165, 0.1),
+  0 80px 80px -20px rgba(154, 156, 165, 0.16);
+
+// ─── Typography ───────────────────────────────────────────────────────────────
+$font-family: "Lato", sans-serif;
+
+// ─── Layout ───────────────────────────────────────────────────────────────────
+$container-max-width: 1278px;
+$container-padding: clamp(16px, 2vw, 24px);
+
+// ─── Transitions ─────────────────────────────────────────────────────────────
+$transition: 0.2s ease;

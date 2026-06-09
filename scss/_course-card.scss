@@ -1,0 +1,106 @@
+@use "variables" as *;
+
+.course-card {
+  background-color: $color-white;
+  border-radius: 4px;
+  box-shadow: $shadow-card;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform $transition, box-shadow $transition;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $shadow-card-hover;
+  }
+
+  &__image {
+    aspect-ratio: 390 / 240;
+    width: 100%;
+    background-color: $color-yellow;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+  }
+
+  &__body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    border-left: 1px solid $color-border;
+    border-right: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+  }
+
+  &__category {
+    display: inline-block;
+    padding: 1px 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: calc(21 / 14);
+    color: $color-white;
+    border-radius: 4px;
+    align-self: flex-start;
+
+    &--marketing {
+      background-color: $cat-marketing;
+    }
+    &--management {
+      background-color: $cat-management;
+    }
+    &--hr {
+      background-color: $cat-hr;
+    }
+    &--design {
+      background-color: $cat-design;
+    }
+    &--development {
+      background-color: $cat-development;
+    }
+  }
+
+  &__title {
+    font-size: clamp(16px, 1.6vw, 20px);
+    font-weight: 700;
+    line-height: calc(30 / 20);
+    color: $color-text;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  &__price {
+    font-size: clamp(15px, 1.4vw, 18px);
+    font-weight: 700;
+    line-height: calc(27 / 18);
+    color: $color-price;
+  }
+
+  &__divider {
+    flex-shrink: 0;
+    align-self: center;
+    width: 1px;
+    height: 16px;
+    background-color: $color-author;
+  }
+
+  &__author {
+    font-size: clamp(14px, 1.4vw, 18px);
+    font-weight: 400;
+    line-height: calc(27 / 18);
+    color: $color-author;
+  }
+}

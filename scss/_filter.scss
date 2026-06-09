@@ -1,0 +1,50 @@
+@use "variables" as *;
+
+.filter {
+  flex: 1 1 auto;
+  min-width: 0;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  &__item {
+    flex-shrink: 0;
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 20px;
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: calc(26 / 16);
+    color: $color-text-muted;
+    border: 1.5px solid transparent;
+    border-radius: 4px;
+    transition: color $transition, border-color $transition;
+    white-space: nowrap;
+
+    &:hover {
+      color: $color-primary;
+    }
+
+    &--active {
+      color: $color-primary;
+      border-color: $color-primary;
+    }
+  }
+
+  &__count {
+    font-size: 10px;
+    font-weight: 900;
+    line-height: calc(15 / 10);
+    color: inherit;
+    margin-top: -8px;
+  }
+}
